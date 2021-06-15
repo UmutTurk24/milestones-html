@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 25px;
+            width: 600px;
+        }
+        table td{
+            border: 2px solid;
+            text-align: center;
+        }
+
+        table{
+            padding: 5px;
+        }
+
+        table tr:nth-child(3n){
+            background-color: lightgray;
+        }
+        .colorfulheader{
+            color: brown;
+        }
+
+        h2{
+            color: green;
+            border-width: 5px; 
+            border-color: black; 
+            border-style: solid; 
+            border-spacing: 5px; 
+            padding: 4px;
+        }
+        
+        #specialheader{
+            color: red;
+            border-radius: 10px;
+        }
+
+        h1 > h2{
+            color: darkgoldenrod;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        There are special tags that can be used for certain purposes 
+    </h1>
+    <h2 id="specialheader">
+        You may use a &lt;pre&gt; tag to <em>display</em> the html text the same way it is shown in the <i>text editor</i>
+    </h2>
+    <ol>
+         
+    <pre> 
+<li>Hello from the other side,
+    I must've called a thousand times
+        To tell you I'm sorry for everything that I've done
+            But when I call, you never seem to be home
+            </pre>
+            How it looks in the code:   
+        
+            <img src="tag-example.png" style="width: 450px;">
+        </li>
+        <li>
+            It can come handy if there is a special yet difficult to implement format
+            <pre>
+                Hey   There
+            Have            You  
+        Deciphered              The
+                Code  Yet?
+            </pre>
+            How it looks in the code:
+            <img src="tag-example2.png" style="width: 450px;">
+        </li>
+    </ol>
+
+    <h2 class="colorfulheader">
+        You may use a &lt;blockquote&gt; tag to quote a certain block-text like you might have done in MLA citation in a paper
+    </h2>
+    HTML feels like it has been designed for publishing a newspaper. You can  
+    intuitively understand what does a tag do without looking it up: 
+    <blockquote cite="https://www.w3schools.com/tags/tag_blockquote.asp">
+        The &lt;blockquote&gt; tag specifies a section that is quoted from another source. You can use the <code>cite</code> attribute to make a reference 
+    </blockquote>
+
+    <dl>
+        If you would like to read more on this:
+        <dt>
+            This is a great source to start with: 
+            <a href="url=https://www.w3schools.com/tags/tag_blockquote.asp">w3schools</a>
+        </dt>
+        <dd>
+            Nevertheless, you shouldn't use this as the go-to source for everything. Sometimes it doesn't include important details!
+        </dd>
+        <dt>
+            I would highly encourage using this source to see what other examples there are:
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">developer.mozilla</a>
+        </dt>
+        <dd>
+            I think the examples in this website are more helpful!   
+        </dd>
+    </dl>
+
+    <h2 class="colorfulheader">
+        You may use a &lt;p&gt; tag to write a paragraph. Note that a new line added automatically
+    </h2>
+    You can always <strong>lorem lipsum</strong> to generate <b>dummy text:</b>
+    <p>
+         Quisque finibus nunc felis, ut accumsan eros mollis eget. Nullam sodales neque non pulvinar ultrices. Proin vulputate velit dolor, non vulputate tellus tincidunt eu. Pellentesque posuere arcu sit amet orci dictum pharetra id sed tortor. Nunc ut ullamcorper ipsum. Curabitur sodales rhoncus metus efficitur mollis. Vestibulum eu metus in tortor laoreet dapibus nec vitae sem. Aenean vel viverra tellus. Vivamus mollis nunc mi, in tincidunt ipsum maximus in. Pellentesque augue eros, laoreet sed ultricies sed, tempor quis justo. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    </p>
+
+    <h2>There are other tags in HTML which can be used while designing a page</h2>
+
+    <ol>
+        <li>
+            &lt;button&gt;
+        </li>
+        <ul>
+            <li>
+                You might see this tag used a lot for interactive means
+            </li>
+            <li>
+                I think it is one of the coolest tags available because you can do everything with bottons
+            </li>
+            <li>
+                In a way, isn't everything a button?
+            </li>
+        </ul>
+        <li>
+            &lt;img&gt;
+            <ul>
+                <li>
+                    You can use the &lt;img&gt; tag to display pictures.
+                </li>
+                <li>
+                    It is also incredibly useful to get in the habit of writing this tag since it is used a lot.
+                </li>
+                <li>
+                    I wish there weren't too many aspect ratios because it is annoying to re-size/crop pictures.
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Now let's see some of the tags in a table - because why not!</h3>
+
+    <table style="border-width: 2px; border-color: black; border-style: solid; border-spacing: 5px; margin: auto;">
+        <tbody>
+            <tr>
+                <th>X</th>
+                <th>5</th>
+                <th>7</th>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td>50</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>15</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="border-width: 2px; border-color: black; border-style: solid; border-spacing: 5px; margin: auto; margin-top: 10px;">
+        <tbody>
+            <tr>
+                <th>%</th>
+                <th>1000</th>
+                <th>100</th>
+                <th>10</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>500</td>
+                <td>50</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>200</td>
+                <td>20</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td>100</td>
+                <td>10</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="border-width: 2px; border-color: black; border-style: solid; border-spacing: 5px; margin: auto; margin-top: 10px;">
+        <caption>Some HTML Tags</caption>
+        <tbody>
+            <colgroup>
+                <col style="background-color: teal; padding: 5px;">
+                <col style="background-color: olive;">
+            </colgroup>
+            <tr>
+                <th scope="col">Supported in HTLM5</th>
+                <th scope="col">NOT Supported in HTLM5</th>
+                </tr>
+                <tr>
+                <td>&lt;abbr&gt;</td>
+                <td>&lt;base&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;body&gt;</td>
+                <td>&lt;frame&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;fieldset&gt;</td>
+                <td>&lt;mark&gt;</td>
+                </tr>
+                </tr>
+                <tr>
+                <td>&lt;acronym&gt;</td>
+                <td>&lt;applet&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;basefont&gt;</td>
+                <td>&lt;big&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;dir&gt;</td>
+                <td>&lt;font&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;frameset&gt;</td>
+                <td>&lt;noframe&gt;</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan = "2" style="background-color: snow;">
+                It is very interesting that some tags are no longer used in html!
+            </td>
+        </tfoot>
+      </table>
+
+
+</body>
+</html>

@@ -10,6 +10,18 @@
             margin: 25px;
             width: 600px;
         }
+        table td{
+            border: 2px solid;
+            text-align: center;
+        }
+
+        table{
+            padding: 5px;
+        }
+
+        table tr:nth-child(3n){
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
@@ -53,7 +65,7 @@
         The &lt;blockquote&gt; tag specifies a section that is quoted from another source. You can use the <code>cite</code> attribute to make a reference 
     </blockquote>
 
-    <dl style=";">
+    <dl>
         If you would like to read more on this:
         <dt>
             This is a great source to start with: 
@@ -80,6 +92,137 @@
     </p>
 
     <h2>There are other tags in HTML which can be used while designing a page</h2>
+
+    <ol>
+        <li>
+            &lt;button&gt;
+        </li>
+        <ul>
+            <li>
+                You might see this tag used a lot for interactive means
+            </li>
+            <li>
+                I think it is one of the coolest tags available because you can do everything with bottons
+            </li>
+            <li>
+                In a way, isn't everything a button?
+            </li>
+        </ul>
+        <li>
+            &lt;img&gt;
+            <ul>
+                <li>
+                    You can use the &lt;img&gt; tag to display pictures.
+                </li>
+                <li>
+                    It is also incredibly useful to get in the habit of writing this tag since it is used a lot.
+                </li>
+                <li>
+                    I wish there weren't too many aspect ratios because it is annoying to re-size/crop pictures.
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Now let's see some of the tags in a table - because why not!</h3>
+
+    <table style="border-width: 2px; border-color: black; border-style: solid; border-spacing: 5px; margin: auto;">
+        <tbody>
+            <tr>
+                <th>X</th>
+                <th>5</th>
+                <th>7</th>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td>50</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>15</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="border-width: 2px; border-color: black; border-style: solid; border-spacing: 5px; margin: auto; margin-top: 10px;">
+        <tbody>
+            <tr>
+                <th>%</th>
+                <th>1000</th>
+                <th>100</th>
+                <th>10</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>500</td>
+                <td>50</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>200</td>
+                <td>20</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td>100</td>
+                <td>10</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="border-width: 2px; border-color: black; border-style: solid; border-spacing: 5px; margin: auto; margin-top: 10px;">
+        <caption>Some HTML Tags</caption>
+        <tbody>
+            <colgroup>
+                <col style="background-color: teal; padding: 5px;">
+                <col style="background-color: olive;">
+            </colgroup>
+            <tr>
+                <th scope="col">Supported in HTLM5</th>
+                <th scope="col">NOT Supported in HTLM5</th>
+                </tr>
+                <tr>
+                <td>&lt;abbr&gt;</td>
+                <td>&lt;base&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;body&gt;</td>
+                <td>&lt;frame&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;fieldset&gt;</td>
+                <td>&lt;mark&gt;</td>
+                </tr>
+                </tr>
+                <tr>
+                <td>&lt;acronym&gt;</td>
+                <td>&lt;applet&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;basefont&gt;</td>
+                <td>&lt;big&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;dir&gt;</td>
+                <td>&lt;font&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;frameset&gt;</td>
+                <td>&lt;noframe&gt;</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan = "2" style="background-color: snow;">
+                It is very interesting that some tags are no longer used in html!
+            </td>
+        </tfoot>
+      </table>
+
 
 </body>
 </html>
