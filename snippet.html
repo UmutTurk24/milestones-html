@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(215, 192, 252, 0.61);
+        }
+        h2{
+            font-size: 40px;
+        }
+        div.htmlcode{
+            font-size: 25px;
+            margin: auto auto;
+            size: auto auto;
+            max-width: 700px;
+            border: 10px solid darkcyan;
+            border-radius: 25px;
+            padding: 10px;
+            box-shadow: 20px 15px;
+        }
+        ol{
+            font-size: 27px;
+            margin: 20px;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            
+        }
+        .qna{
+            font-size: 27px;
+            border: 10px solid rgb(17, 185, 185);
+            border-radius: 15px;
+            padding: 10px;
+            box-shadow: 15px 10px;
+            margin: 20px;
+            width: 600px;
+        }
+        .answer{
+            margin-top: 15px;
+        }
+
+        .tooltip {
+            position: relative;
+            border-bottom: 3px dotted rgb(60, 97, 197);
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 320px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: 150%;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center; ">Analyze the HTML Snippet Below</h2>
+
+
+    <div class="htmlcode" style="word-spacing: 3px;">
+        <span style="color: red; font-weight: bold;">&lt;p&gt;</span>
+        Want to search the web? Try: <br> 
+        <span class="tooltip">&lt;a href="https://google.com"<span class="tooltiptext">The link that wants to be redirected</span></span>
+        <span class="tooltip">   id="the-best-link" <span class="tooltiptext">Assingning an id to the tag. It can be used to access for various reasons</span></span>
+        <span class="tooltip">   class="banana" <span class="tooltiptext">Assingning a class name to the tag. It can be used to access for various reasons</span></span>
+        <span class="tooltip">   target="_blank"&gt; <span class="tooltiptext">The target attribute defines a name of, or keyword for, a browsing context (e.g. tab, window, or inline frame). In this case, The response is displayed in a new window or tab</span></span>
+        Google &lt;/a&gt; <br> 
+        <span style="color: red; font-weight: bold;">&lt;/p&gt;</span>   
+    </div>
+
+    
+
+
+
+
+    <div class="lists">
+        <ol>
+            <li class="question">
+                <div class="qna">
+                    <div class="question">
+                        Question: Name the tags in the snippet
+                    </div>
+                    <div class="answer">
+                        Answer: There are 2 tags in the snippet. The first one is the &lt;p&gt; tag, which stands for paragraph. The
+                            second tag is the &lt;a&gt; tag which stands for anchor. 
+                    </div>
+                </div>
+            </li>
+            <li class="question">
+                <div class="qna">
+                    <div class="question">
+                        Question: Link to 2-3 online references that describe each tag, give examples, etc.
+                    </div>
+                    <div class="answer">
+                        Answer: <a href ="https://www.w3schools.com/tags/tag_p.asp#:~:text=Definition%20and%20Usage,Use%20CSS%20to%20style%20paragraphs.">First Link For P</a> and
+                                <a href="https://www.w3schools.com/tags/tag_a.asp"> Second Link for A</a> <br> 
+                                If you have a simple text you want to write that looks similar to a paragraph on a webpage, you may use the &lt;p&gt; tag. Note that it automatically adds a new line. <br> 
+                                If you have a link, you can definitely use the &lt;a&gt; tag
+
+                    </div>
+                </div>
+            </li>
+            <li class="question">
+                <div class="qna">
+                    <div class="question">
+                        Question: Describe the relationship between the tags in terms of nesting ("X is a child of Y")
+
+                    </div>
+                    <div class="answer">
+                        Answer: In this code snippet, &lt;a&gt; is child of &lt;p&gt;. At the same time, &lt;p&gt; is the parent of &lt;a&gt;. 
+                    </div>
+                </div>
+            </li>
+
+            <li class="question">
+                <div class="qna">
+                    <div class="question">
+                        Question:  Explain the relationship between &lt;p&gt; and &lt;/p&gt;
+                    </div>
+                    <div class="answer">
+                        Answer: &lt;p&gt; is the opening tag and &lt;/p&gt; is the closing tag. Things written inside
+                        these tags are affected by the specifications given by the user 
+                    </div>
+                </div>
+            </li>
+
+            <li class="question">
+                <div class="qna">
+                    <div class="question">
+                        Question:  Explain the relationship between &lt;a&gt; and &lt;/a&gt;
+                    </div>
+                    <div class="answer">
+                        Answer: &lt;a&gt; is the opening tag and &lt;/a&gt; is the closing tag. Things written inside
+                        these tags are affected by the specifications given by the user 
+                    </div>
+                </div>
+            </li>
+
+            <li class="question">
+                <div class="qna">
+                    <div class="question">
+                        Question: List the attribute names on the &lt;a&gt; tag
+                    </div>
+                    <div class="answer">
+                        Answer: href, id, class and target
+                    </div>
+                </div>
+            </li>
+            <li class="question">
+                <div class="qna">
+                    <div class="question">
+                        Question: For each attribute on the &lt;a&gt; tag, name its value
+
+                    </div>
+                    <div class="answer">
+                        Answer: "https://google.com", "the-best-link", "banana"  and "_blank"
+                    </div>
+                </div>
+
+            </li>
+            <li class="question">
+                <div class="qna">
+                    <div class="question">
+                        Question: For each attribute/value pair on the &lt;a&gt; tag, describe its purpose and effect
+                    </div>
+                    <div class="answer">
+                        Answer: You can hover over the pairs to see the explanation
+                    </div>
+                </div>
+
+            </li>
+        </ol>
+    </div>
+
+</body>
+</html>
